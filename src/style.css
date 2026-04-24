@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  height: 100vh;
+}
+
+.phone {
+  width: 393px;
+  height: 852px;
+  background: #0d6f2e;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
