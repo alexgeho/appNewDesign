@@ -1,10 +1,10 @@
 import './style.css'
 import hourImg from './assets/Hour.png'
 import playImg from './assets/Play.png'
-import cameraBtnImg from './assets/Camera.png'
-import chatBtnImg from './assets/Chat.png'
-import projectsBtnImg from './assets/Projects.png'
-import shiftBtnImg from './assets/Shift.png'
+import cameraBtnImg from './assets/Camera.svg'
+import chatBtnImg from './assets/Chat.svg'
+import projectsBtnImg from './assets/Projects.svg'
+import shiftBtnImg from './assets/Shift.svg'
 
 
 
@@ -55,28 +55,45 @@ playBtn()
 
 /* BUTTONS GRID START */
 
-const gridBtnArrey = [
-  { id: 1, name: 'camera', img: cameraBtnImg },
-  { id: 2, name: 'chat', img: chatBtnImg },
-  { id: 3, name: 'projects', img: projectsBtnImg },
-  { id: 4, name: 'shift', img: shiftBtnImg },
+type Btn = {
+  name: string
+  img: string
+}
+
+const gridBtnArrey: Btn[] = [
+  { name: 'Camera', img: cameraBtnImg },
+  { name: 'Chat', img: chatBtnImg },
+  { name: 'Projects', img: projectsBtnImg },
+  { name: 'Shift history', img: shiftBtnImg },
 ]
 
+function createBtnCell(btn: Btn): HTMLDivElement {
+  const wrapper = document.createElement('div')
+  wrapper.className = 'btn'
 
-
-function createBtnCell(): HTMLImageElement {
   const img = document.createElement('img')
-  img.src = cameraBtnImg
-  img.className = 'btn-cell'
-  return img
+  img.src = btn.img
+  img.className = 'btn-icon'
+
+  const text = document.createElement('p')
+  text.textContent = btn.name
+  text.className = 'btn-text'
+
+  wrapper.appendChild(img)
+  wrapper.appendChild(text)
+
+  return wrapper
 }
 
 function renderBtnCells() {
   const container = document.getElementById('gridBtn')
+  if (!container) return
+
+  container.innerHTML = ''
 
   for (let i = 0; i < gridBtnArrey.length; i++) {
-    const element = createBtnCell();
-    container?.appendChild(element)
+    const element = createBtnCell(gridBtnArrey[i])
+    container.appendChild(element)
   }
 }
 

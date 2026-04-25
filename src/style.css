@@ -57,9 +57,24 @@ main {
 
 .timer {
   width: 283px;
-  height: 340px;
+  display: flex;
+  flex-direction: column;
+
   align-items: center;
-  border: 1px solid white;
+  justify-content: center;
+
+  p {
+    color: var(--color-text-main, #111827);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 75px */
+    letter-spacing: -0.55px;
+    margin: 40px;
+  }
 }
 
 .project-select {
@@ -79,34 +94,55 @@ main {
 }
 
 
-.time-indicators {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  align-self: stretch;
-  width: 283px;
-  height: 131px;
-  border: 1px solid green;
-
-
-  p {
-    color: var(--color-text-main, #111827);
-    text-align: center;
-    font-family: "DM Sans";
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    /* 75px */
-    letter-spacing: -0.55px;
-  }
-}
 
 .indicators-hours {
-  border: 1px solid gray;
   display: flex;
   width: 283px;
   justify-content: center;
-  overflow: hidden
+  overflow: hidden;
+  gap: 14px;
 }
+
+.hour-cell {
+  width: 19px;
+  height: 40px;
+  border-radius: 100px;
+  background: #57B6FF;
+}
+
+
+/* BUTTONS GRID */
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 363px;
+}
+
+
+.btn {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.btn-icon {
+  width: 30px;
+  height: 30px;
+}
+
+
+.btn-text {
+  margin: 0;
+  font-size: 20px;
+  color: #111827;
+}
+
+/*  */
