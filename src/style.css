@@ -10,19 +10,26 @@ body {
 .phone {
   width: 393px;
   height: 852px;
-  background: #0d6f2e;
+
+  background: #e9e8e8;
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
-.header {
+header {
   display: flex;
   width: 393px;
   padding: 21px 16px 19px 16px;
   justify-content: center;
   align-items: center;
   gap: 154px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .time {
@@ -45,4 +52,55 @@ body {
   align-items: center;
   gap: 7px;
   flex: 0.8 0 0;
+}
+
+
+.timer {
+  display: flex;
+  width: 283px;
+  height: 340px;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+  border: 1px solid white;
+}
+
+.project-select {
+  display: flex;
+  width: 243px;
+  height: 22px;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  background: rgba(255, 255, 255, 0.70);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+}
+
+
+.time-indicators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  width: 283px;
+  height: 131px;
+  border: 1px solid ;
+
+  p {
+    color: var(--color-text-main, #111827);
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 75px */
+    letter-spacing: -0.55px;
+  }
 }
