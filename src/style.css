@@ -11,6 +11,9 @@ body {
   width: 393px;
   height: 852px;
 
+  display: flex;
+  flex-direction: column;
+
   background: #e9e8e8;
   border-radius: 30px;
   overflow: hidden;
@@ -30,6 +33,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .time {
@@ -146,3 +150,25 @@ main {
 }
 
 /*  */
+
+
+/* FOOTER START */
+
+.footer {
+  margin-top: auto;
+}
+
+.navFooter {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 30px;
+
+}
+
+.btnFooter {
+  background: #e9e8e8;
+  border-style: hidden;
+}
+
+/* FOOTER END */
