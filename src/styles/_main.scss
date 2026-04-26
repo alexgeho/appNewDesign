@@ -1,0 +1,117 @@
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.project-select {
+  display: flex;
+  width: 243px;
+  height: 22px;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 55px;
+  align-self: stretch;
+
+
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  background: rgba(255, 255, 255, 0.70);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+
+  p {
+    font-size: 20px;
+    white-space: nowrap;
+    margin: 0px;
+
+  }
+}
+
+.timer {
+  width: 283px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.55px;
+    text-align: center;
+    margin: 30px;
+  }
+}
+
+
+
+
+
+.indicators-hours {
+  display: flex;
+  width: 283px;
+  justify-content: center;
+  overflow: hidden;
+  gap: 14px;
+}
+
+.hour-cell {
+  width: 19px;
+  height: 40px;
+  border-radius: 100px;
+  background: #57B6FF;
+}
+
+
+/* PLAY BTN */
+#playBtn img {
+  width: 220px;
+  height: 220px;
+}
+
+/* PLAY BTN */
+
+
+/* BUTTONS GRID */
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 363px;
+}
+
+
+.btn {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.btn-icon {
+  width: 30px;
+  height: 30px;
+}
+
+
+.btn-text {
+  margin: 0;
+  font-size: 20px;
+  color: #111827;
+}
+
+/*  */

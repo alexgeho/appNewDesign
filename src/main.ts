@@ -1,4 +1,4 @@
-import './style.css'
+import './style.scss'
 import hourImg from './assets/Hour.png'
 import playImg from './assets/Play.png'
 import cameraBtnImg from './assets/Camera.svg'
